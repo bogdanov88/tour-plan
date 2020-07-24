@@ -1,84 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Best Tour Plan - Hotel Booking</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header-top">
-          <a href="#" class="logo">
-            <img
-              src="img/horisontal-logo.svg"
-              alt="logo: Best tour plan"
-              class="logo-image"
-            />
-          </a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Tour Plan - Hotel Booking</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-top">
+        <a href="#" class="header__logo"><img src="img/horisontal-logo.svg" alt="image: logotype" class="header__logo-image"></a>
+        
+        <form action="#" class="search">
+          <input type="text" placeholder="Search Location" class="search__input">
+          <button class="search__button"><img src="img/search.svg" alt="icon: search"></button>
+        </form>
 
-          <form action="#" class="search">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
-            <button class="search__button">
-              <img src="img/search.svg" alt="icon: search" />
-            </button>
-          </form>
-
-          <a href="#" class="user">
-            <img
-              src="img/user-avatar.jpg"
-              alt="user avatar"
-              class="user__avatar"
-            />
-            <span class="user__name">Nathan</span>
-          </a>
-        </div>
-        <!-- /.div header-top -->
-
-        <ul class="header-menu">
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">
-              All Deals
-            </a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">
-              Hotels
-            </a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">
-              Activities
-            </a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">
-              Hotel Day Packages
-            </a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">
-              Restaurants
-            </a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">
-              Events
-            </a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="header-menu__link">
-              Rodrigues
-            </a>
-          </li>
-        </ul>
+        <a href="#" class="user">
+          <img src="img/user-avatar.jpg" alt="photo: user Nathan" class="user__avatar">
+          <span class="user__name">Nathan</span>
+        </a>
       </div>
-      <!-- /. div.container -->
-    </header>
-  </body>
+      <!-- /div .header-top -->
+      <ul class="header-nav">
+        <li class="header-nav__item"><a href="#" class="header-nav__link">All Deals</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Hotels</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Activities</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Hotel Day Packages</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Restaurants</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Events</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Rodrigues</a></li>
+      </ul>
+    </div>
+  </header>
+</body>
 </html>
