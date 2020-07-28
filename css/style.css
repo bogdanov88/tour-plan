@@ -380,7 +380,7 @@ template {
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Muli-Regular', sans-serif;
   color: #333333;
 }
 
@@ -405,6 +405,11 @@ body {
           align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.header__search {
+  margin-right: auto;
+  margin-left: 108px;
 }
 
 .search {
@@ -456,5 +461,12 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+}
+
+.user__name {
+  margin-left: 18px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */

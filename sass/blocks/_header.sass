@@ -1,0 +1,53 @@
+.header
+  background-color: #ffffff
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 40px
+    padding-bottom: 40px
+  &__search
+    margin-right: auto
+    margin-left: 108px
+
+.search
+  display: flex
+  border-radius: 6px
+  overflow: hidden
+  position: relative
+  &__input
+    position: relative
+    width: 350px
+    height: 40px
+    padding-left: 23px
+    padding-right: 75px
+    border: none
+    font-size: 12px
+    line-height: 15px
+    color: $text-color
+    background-color: #F5FAFE
+  &__button
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 65px
+    background-color: $bgc-button
+    border: none
+.user
+  text-decoration: none
+  display: block
+  display: flex
+  align-items: center
+  &__avatar
+    width: 40px
+    height: 40px
+    object-fit: cover
+    border-radius: 50%
+  &__name
+    margin-left: 18px
+    font-size: 14px
+    line-height: 18px
+    color: $text-color
+
+
