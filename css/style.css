@@ -346,7 +346,7 @@ template {
   font-family: 'Muli-SemiBold';
   src: url("../fonts/Muli-SemiBold.eot");
   src: url("../fonts/Muli-SemiBold.eot") format("embedded-opentype"), url("../fonts/Muli-SemiBold.svg") format("svg"), url("../fonts/Muli-SemiBold.ttf") format("truetype"), url("../fonts/Muli-SemiBold.woff") format("woff");
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -362,7 +362,7 @@ template {
   font-family: 'Muli-Light';
   src: url("../fonts/Muli-Light.eot");
   src: local("☺"), url("../fonts/Muli-Light.woff") format("woff"), url("../fonts/Muli-Light.ttf") format("truetype"), url("../fonts/Muli-Light.svg") format("svg");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -370,7 +370,7 @@ template {
   font-family: 'Muli-Bold';
   src: url("../fonts/Muli-Bold.eot");
   src: local("☺"), url("../fonts/Muli-Bold.woff") format("woff"), url("../fonts/Muli-Bold.ttf") format("truetype"), url("../fonts/Muli-Bold.svg") format("svg");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -393,6 +393,10 @@ body {
   background-color: #ffffff;
 }
 
+.navbar__logo {
+  width: 177px;
+}
+
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +414,41 @@ body {
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
+}
+
+.navbar-menu {
+  margin: 0;
+  padding: 30px 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffffff;
+}
+
+.navbar-menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  font-family: 'Muli-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+}
+
+.navbar-bottom {
+  background-color: #0A223D;
+}
+
+.horizontal-logo {
+  width: 100%;
 }
 
 .search {
@@ -468,5 +507,43 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .search {
+    width: 340px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .container .navbar__logo {
+    max-width: 133px;
+  }
+  .container .navbar-top {
+    padding: 30px 0;
+  }
+  .container .navbar__search {
+    margin-left: auto;
+  }
+  .container .navbar-menu {
+    padding: 22px 0;
+  }
+  .container .navbar-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

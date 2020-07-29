@@ -1,5 +1,7 @@
 .navbar
   background-color: #ffffff
+  &__logo
+    width: 177px
   &-top
     display: flex
     justify-content: space-between
@@ -9,6 +11,30 @@
   &__search
     margin-right: auto
     margin-left: 108px
+  &-menu
+    margin: 0
+    padding: 30px 0 
+    list-style: none
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $text-light
+    &__link
+      text-decoration: none
+      text-transform: uppercase
+      color: inherit
+      font-family: 'Muli-Bold', sans-serif
+      font-weight: bold
+      font-size: 14px
+      line-height: 18px
+      letter-spacing: 0.1em
+  &-bottom
+    background-color: $dark
+
+
+.horizontal-logo
+  width: 100%
+
 
 .search
   display: flex
@@ -49,5 +75,11 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+
+
+
+
+
+
 
 
