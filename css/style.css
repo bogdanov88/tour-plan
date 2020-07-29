@@ -520,7 +520,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  .search {
+  .search__input {
     width: 340px;
   }
   .container {
@@ -556,6 +556,7 @@ body {
     border: none;
     width: 16px;
     height: 11px;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
