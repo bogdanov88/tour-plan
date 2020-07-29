@@ -580,7 +580,7 @@ body {
 }
 
 @media (max-width: 576px) {
-  .navbar-logo {
+  .navbar__logo {
     width: 99px;
   }
 }
