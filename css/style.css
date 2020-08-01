@@ -381,6 +381,7 @@ template {
 
 body {
   font-family: 'Muli-Regular', sans-serif;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -511,6 +512,123 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.breadcrumbs-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 18px 0;
+  margin: 0;
+}
+
+.breadcrumbs-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumbs-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
+.breadcrumbs-list__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-info__offer {
+  margin-left: 14px;
+}
+
+.hotel-info__description {
+  margin: 0 0 20px;
+}
+
+.hotel-info__name {
+  margin: 4px 0 0;
+}
+
+.hotel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-name {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.stars {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.offer {
+  font-family: 'Muli-SemiBold';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+  color: #ffffff;
+  display: inline-block;
+  background-color: #EC1F46;
+  padding: 4px 9px;
+  border-radius: 3px;
+}
+
+.description {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.rating {
+  max-width: 65px;
+  min-height: 45px;
+  background-color: #EC1F46;
+  border-radius: 4px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.rating__text {
+  font-family: 'Muli-SemiBold';
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.rating__counter {
+  font-family: 'Muli-Bold';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.rating__counter--small {
+  font-size: 0.8em;
 }
 
 @media (max-width: 1200px) {
