@@ -9,7 +9,7 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 
   mousewheel: {
-    invert: true,
+    invert: false,
   },
 
   keyboard: {
