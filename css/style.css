@@ -860,8 +860,11 @@ img {
 .map {
   width: 347px;
   height: 213px;
+}
+
+#map > ymaps {
   border-radius: 8px;
-  background-color: tomato;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
