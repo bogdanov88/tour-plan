@@ -860,9 +860,6 @@ img {
 .map {
   width: 347px;
   height: 213px;
-}
-
-#map > ymaps {
   border-radius: 8px;
   overflow: hidden;
 }
