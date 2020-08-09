@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--для яндекс карт отключение мобильного масштабирования всей страницы-->
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, maximum-scale=1"
+    />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
@@ -140,19 +143,39 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img class="slide-item" src="img/slide1.png" alt="slide-somehotel" />
+                  <img
+                    class="slide-item"
+                    src="img/slide1.png"
+                    alt="slide-somehotel"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="slide-item" src="img/slide2.jpg" alt="slide-somehotel" />
+                  <img
+                    class="slide-item"
+                    src="img/slide2.jpg"
+                    alt="slide-somehotel"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="slide-item" src="img/slide3.jpg" alt="slide-somehotel" />
+                  <img
+                    class="slide-item"
+                    src="img/slide3.jpg"
+                    alt="slide-somehotel"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="slide-item" src="img/slide4.jpg" alt="slide-somehotel" />
+                  <img
+                    class="slide-item"
+                    src="img/slide4.jpg"
+                    alt="slide-somehotel"
+                  />
                 </div>
                 <div class="swiper-slide">
-                  <img class="slide-item" src="img/slide5.jpeg" alt="slide-somehotel" />
+                  <img
+                    class="slide-item"
+                    src="img/slide5.jpeg"
+                    alt="slide-somehotel"
+                  />
                 </div>
               </div>
               <!-- If we need navigation buttons -->
@@ -173,11 +196,19 @@
                 <!-- /.booking__price -->
                 <div class="booking__room">
                   <div class="booking__text">
-                    <img src="img/human-icon.svg" alt="icon: human" class="booking__icon">
+                    <img
+                      src="img/human-icon.svg"
+                      alt="icon: human"
+                      class="booking__icon"
+                    />
                     <span class="booking__description">2 x Guests</span>
                   </div>
                   <div class="booking__text">
-                    <img src="img/home-icon.svg" alt="icon: home" class="booking__icon">
+                    <img
+                      src="img/home-icon.svg"
+                      alt="icon: home"
+                      class="booking__icon"
+                    />
                     <span class="booking__description">1 x Room</span>
                   </div>
                 </div>
@@ -187,7 +218,11 @@
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
-                  <img src="img/phone-icon.svg" alt="icon: phone" class="booking__icon">
+                  <img
+                    src="img/phone-icon.svg"
+                    alt="icon: phone"
+                    class="booking__icon"
+                  />
                   <span class="booking__num">12100</span>
                 </a>
               </div>
@@ -198,8 +233,14 @@
             <div id="map" class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9911.9421948751!2d98.29549426480429!3d7.838717124268227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596866233669!5m2!1sru!2sru"
-                width="347" height="213" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                tabindex="0">
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0;"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              >
               </iframe>
             </div>
             <!-- /.map -->
@@ -213,40 +254,23 @@
     <!-- /.hotel -->
     <section class="newsletter">
       <div class="newsletter-wrapper">
-
+        <h2 class="newsletter-title newsletter__title">
+          subscribe to our
+          <span class="newsletter-title__strong">Newsletter</span>
+        </h2>
+        <form action="#" class="subscribe newsletter__subscribe">
+          <input type="text" placeholder="Your email address" class="subscribe__input" />
+          <button class="subscribe__button">
+            Send
+          </button>
+        </form>
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ac538c9e-e09e-4ae2-8317-4b6caea05d19&lang=ru_RU" type="text/javascript">
-    </script>
+    <!-- дальше идут скрипты -->
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=ac538c9e-e09e-4ae2-8317-4b6caea05d19&lang=ru_RU"
+      type="text/javascript"
+    ></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

@@ -1,0 +1,68 @@
+.newsletter
+  position: relative // для псевдо элемента
+  padding: 98px 0 87px
+  width: 100%
+  background-image: url(../img/newsletter-bg.jpg)
+  background-repeat: no-repet
+  background-size: cover
+  background-position: center
+  // =======================
+  margin-bottom: 100px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.8)
+  &-wrapper
+    position: relative // чтобы враппер стал сверху тонировки
+    max-width: 731px
+    margin: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-title
+    color: $text-light
+    display: flex
+    flex-direction: column
+    font-family: 'Muli-Light'
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
+    margin: 0
+    &__strong
+      font-family: 'Muli-SemiBold'
+      font-weight: 600
+      font-size: 36px
+      line-height: 45px
+      text-transform: uppercase
+.subscribe
+  position: relative
+  border-radius: 4px
+  overflow: hidden
+  width: 350px
+  min-height: 55px
+  &__input
+    width: 100%
+    height: 100%
+    position: absolute
+    font-family: 'Muli-Light'
+    font-weight: 300
+    font-size: 14px
+    line-height: 18px
+    border: none
+    padding: 0 75px 0 33px
+  &__button
+    position: absolute
+    border: none
+    min-width: 65px
+    height: 100%
+    background-color: $bgc-button
+    color: $text-light
+    top: 0
+    right: 0
+    cursor: pointer
