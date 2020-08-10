@@ -1,0 +1,95 @@
+.reviews
+  padding: 40px 0 70px
+  
+  &__title
+    font-family: 'Muli-Bold'
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+    text-align: center
+    margin: 0 0 70px
+  &-slider
+    &__button
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+      z-index: 99
+      border: none
+      cursor: pointer
+      &--prev
+        left: 0
+        background-image: url(../img/arrow-prev-secondary.svg)
+      &--next
+        right: 0
+        background-image: url(../img/arrow-next-secondary.svg)
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 731px
+      margin: 45px auto 0
+      background-color: #fff
+      border-radius: 8px
+      padding: 0 62px 30px
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 13px
+        left: 62px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        top: 118px
+        right: 62px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: -45px
+      margin-bottom: 30px
+    &__avatar
+      border-radius: 50%
+      width: 90px
+      height: 90px
+      object-fit: cover
+      margin-bottom: 9px
+    &__username
+      color: $bgc-button
+      font-family: 'Muli-Bold'
+      font-weight: bold
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      margin: 0 0 10px
+    &__date
+      font-family: 'Muli-Regular'
+      font-weight: normal
+      font-size: 10px
+      line-height: 13px
+      margin: 0 0 4px
+    &__text
+      text-align: justify
+      font-weight: normal
+      font-size: 12px
+      line-height: 160%
+      max-width: 537px
+      margin: auto
+    &__rating
+      display: flex
+      align-items: center

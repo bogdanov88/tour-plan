@@ -1,26 +1,39 @@
-var mySwiper = new Swiper('.swiper-container', {
+var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
 
-  mousewheel: {
-    invert: false,
-  },
-
+  //переключение стрелками клавиатуры
   keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
 
   effect: "coverflow",
-})
+});
+// для того чтобы существовало 2 разных слайдера на странице = их необходимо инициализировать ОТДЕЛЬНО !!!
+// СЕЙЧАС - ОНИ иницализируются по предустановленному классу .swiper-container в строке new Swiper('.swiper-container', {
+// это надо исправить!
+// дублируем, меняем названия переменных, и имя в параметрах.
+var reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
 
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
 
+  //переключение стрелками клавиатуры
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
-
-
+});

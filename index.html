@@ -137,54 +137,55 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider hotel-grid__slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    class="slide-item"
-                    src="img/slide1.png"
-                    alt="slide-somehotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="slide-item"
-                    src="img/slide2.jpg"
-                    alt="slide-somehotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="slide-item"
-                    src="img/slide3.jpg"
-                    alt="slide-somehotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="slide-item"
-                    src="img/slide4.jpg"
-                    alt="slide-somehotel"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="slide-item"
-                    src="img/slide5.jpeg"
-                    alt="slide-somehotel"
-                  />
-                </div>
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel-grid__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="slide-item"
+                  src="img/slide1.png"
+                  alt="slide-somehotel"
+                />
               </div>
-              <!-- If we need navigation buttons -->
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="slide-item"
+                  src="img/slide2.jpg"
+                  alt="slide-somehotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="slide-item"
+                  src="img/slide3.jpg"
+                  alt="slide-somehotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="slide-item"
+                  src="img/slide4.jpg"
+                  alt="slide-somehotel"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="slide-item"
+                  src="img/slide5.jpeg"
+                  alt="slide-somehotel"
+                />
+              </div>
             </div>
-            <!-- /.swiper-container -->
+            <!-- If we need navigation buttons -->
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
-          <!-- /.slider -->
+          <!-- /.swiper-container -->
           <div class="hotel-grid-wrapper">
             <div class="booking">
               <div class="booking__info">
@@ -259,12 +260,158 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="#" class="subscribe newsletter__subscribe">
-          <input type="text" placeholder="Your email address" class="subscribe__input" />
+          <input
+            type="text"
+            placeholder="Your email address"
+            class="subscribe__input"
+          />
           <button class="subscribe__button">
             Send
           </button>
         </form>
       </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">
+          What people thinks about us
+        </h2>
+        <!-- SLIDER -->
+        <!-- чтобы не переделывать javascript-логику - у базовой конструкции мы НЕ меняем классы -----а----- ДОБАВЛЯЕМ СВОИ КЛАССЫ И
+        ФОРМИРУЕМ СВОЮ ЛОГИКУ. И ДАЛЕЕ В НАТИВНЫЙ СЛАЙД-ЭЛЕМЕНТ - ВКЛАДЫВАЕМ !!!СВОЙ!!! !!!СЛАЙД-ЭЛЕМЕНТ!!! И ТЕМ САМЫМ - КАК-БЫ 
+        СОЗДАЕМ СВОЮ (обертка будет четко подстать обертке нативной - но даст возможность менять стили не влияя на базовую конструкцию слайдера)
+        ОБЕРТКУ ЭЛЕМЕНТА СЛАЙДА - ЧТОБЫ КАСТОМИЗИРОВАТЬ СТИЛИ СЛАЙДА = ПОД СЕБЯ! -->
+        <!-- ==================================== -->
+        <!-- после добавления и изменения разметки - НЕОБХОДИМО ВИДОИЗМЕНИТЬ JAVASCRIPT файл -  -->
+        <div class="swiper-container reviews-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <!--тут внутри - блоки с аватаркой с рейтингом и именем -->
+                  <img
+                    src="img/reviews-avatar.jpg"
+                    alt="photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Megan Fox</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                  </div>
+                  <!-- /.rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- swiper-slide -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <!--тут внутри - блоки с аватаркой с рейтингом и именем -->
+                  <img
+                    src="img/swiper-avatar-2.jpg"
+                    alt="photo: Megan Fox"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Justin Thrudo</h3>
+                  <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                  <div class="reviews-slider__rating">
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                    <img
+                      src="img/star.svg"
+                      alt="star rating"
+                      class="stars__item"
+                    />
+                  </div>
+                  <!-- /.rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  The new Vizio V-Series 2.1-Channel Soundbar is one part of a
+                  complete revamp of Vizio’s audio lineup, and it represents the
+                  company’s entry-level offering. There was a time when getting
+                  great living room audio meant paying an arm and a leg. That,
+                  however, has changed. These days you can get a decent soundbar
+                  or set of speakers to seriously improve on your TVs audio for
+                  under $200. The Vizio V-Series 2.1-Channel Soundbar is living
+                  proof. But at such a low price, it’s almost unthinkable that
+                  Vizio wouldn’t have to cut some major corners. The result is a
+                  soundbar that may not come loaded with features, but delivers
+                  in the one area that really counts: sound quality.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
+        </div>
+        <!--/.swiper-container /.reviws-slider -->
+      </div>
+      <!--/.container -->
     </section>
     <!-- дальше идут скрипты -->
     <script
