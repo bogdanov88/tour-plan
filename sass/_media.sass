@@ -3,12 +3,14 @@
     max-width: 960px
   .hotel-slider
     width: 590px
+  .card
+    width: 230px
+    height: 230px
 
 @media (max-width: 992px)
   .search
     &__input
       width: 340px
-
   .newsletter-wrapper
     max-width: 720px
   .container
@@ -38,7 +40,15 @@
     &-slider
       &__item
         max-width: 579px
-
+  .activities
+    padding: 60px 0 70px 0
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 230px
 
 @media (max-width: 768px)
   .container
@@ -117,7 +127,9 @@
     &__title
       font-size: 30px
       line-height: 38px
-
+  .card
+    width: 49%
+    height: 255px
 
 @media (max-width: 576px)
   .navbar
@@ -145,3 +157,12 @@
       font-size: 18px
       line-height: 23px
       margin: 0 0 40px
+  .activities
+    padding: 40px 0 40px 0
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 23px
+  .card
+    width: 100%
+    height: 230px
