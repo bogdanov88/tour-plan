@@ -172,6 +172,40 @@
   .card
     width: 49%
     height: 255px
+  .grid-card
+    &__title-wrapper
+      margin: 0
+    &__item
+      &:nth-child(1)
+        grid-column: 1 / 2
+      &_large
+        grid-template-columns: 1fr 
+        grid-template-rows: repeat(2, 1fr)
+        max-width: 100%
+    &__image
+      &_large
+        grid-column: 1 / 2
+        max-width: 100%
+        height: 250px
+    &__picture
+      object-fit: cover
+      width: 100%
+      height: 100%
+    &__hotel-name
+      &_large
+        margin: 0 0 23px
+    &__desc-text
+      display: none
+    &__info
+      &_large
+        grid-column: 1 / 2
+        height: 250px
+        padding: 30px
+    &__description
+      &_large
+        margin-bottom: 24px
+  .stars
+    display: none
 
 @media (max-width: 576px)
   .navbar

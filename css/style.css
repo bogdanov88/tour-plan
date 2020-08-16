@@ -1681,6 +1681,53 @@ img {
     width: 49%;
     height: 255px;
   }
+  .grid-card__title-wrapper {
+    margin: 0;
+  }
+  .grid-card__item:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+  }
+  .grid-card__item_large {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    max-width: 100%;
+  }
+  .grid-card__image_large {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    max-width: 100%;
+    height: 250px;
+  }
+  .grid-card__picture {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .grid-card__hotel-name_large {
+    margin: 0 0 23px;
+  }
+  .grid-card__desc-text {
+    display: none;
+  }
+  .grid-card__info_large {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    height: 250px;
+    padding: 30px;
+  }
+  .grid-card__description_large {
+    margin-bottom: 24px;
+  }
+  .stars {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
