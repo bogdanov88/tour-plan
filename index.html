@@ -17,7 +17,7 @@
     <title>Best Tour Plan - Hotel Booking</title>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="navbar__logo"
@@ -27,7 +27,7 @@
               class="horizontal-logo"
           /></a>
 
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
             <input
               type="text"
               placeholder="Search Location"
@@ -38,7 +38,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="photo: user Nathan"
@@ -59,6 +59,20 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <a href="#" class="user navbar__user navbar__user_mobile_visible">
+                <img src="img/user-avatar.jpg" alt="photo: user Nathan" class="user__avatar" />
+                <span class="user__name user__name_light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <form action="#" class="search navbar__search navbar__search_mobile_visible">
+                <input type="text" placeholder="Search Location" class="search__input" />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>

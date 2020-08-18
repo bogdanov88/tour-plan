@@ -125,12 +125,59 @@
       grid-column: span 2
 
 @media (max-width: 768px)
+  body
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
+  .user
+    &__name
+      &_light
+        color: $text-light
+        margin-left: 0
+        margin-bottom: 27px
+    &__avatar
+      margin-bottom: 10px
   .navbar
-    &__search, &__user, &-menu
+    &__mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &__search
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &__user
+      flex-direction: column
+      align-items: center
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+    &-bottom
       display: none
+      position: fixed
+      top: 78px
+      left: 0
+      right: 0
+      bottom: 0
+      padding-top: 31px
+      &_visible
+        display: block
+    &-menu
+      padding-top: 0
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &_mobile
+          &_visible
+            display: block
   .menu
     &-button
       border: none
