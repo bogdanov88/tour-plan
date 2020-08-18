@@ -8,7 +8,31 @@
     grid-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
-    
+  &__logo
+    width: 166px
+    grid-row: 1 / 3
+    align-self: stretch
+  &__categories
+    grid-row: 1 / 4
+  &__social
+    &-links
+      display: flex
+      align-items: center
+      justify-content: space-between
+      min-width: 83px
+    &-network
+      display: flex
+      align-items: start
+      grid-column: span 2
+      grid-row: 2 / 4
+  &__contact-details
+    grid-column: span 2
+  &__contact-form
+    grid-column: span 2
+  // &__additional//из за этих двух правил ломался адаптив от Артема
+  //   grid-row: 1 / 2
+  // &__legal
+  //   grid-row: 1 / 2
   &__title
     font-weight: bold
     font-size: 18px
@@ -35,27 +59,7 @@
   &__link
     text-decoration: none
     color: inherit
-  &__logo
-    width: 166px
-    grid-row: 1 / 3
-    align-self: stretch
-  &__categories
-    grid-row: 1 / 4
-  &__additional
-    grid-row: 1 / 2
-  &__legal
-    grid-row: 1 / 2
-  &__social
-    &-links
-      display: flex
-      align-items: center
-      justify-content: space-between
-      min-width: 83px
-    &-network
-      display: flex
-      align-items: start
-      grid-column: span 2
-      grid-row: 2 / 4
+  
   &__text
     color: $footer-text-color
     margin-bottom: 20px
@@ -69,8 +73,7 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
-  &__contact-form
-    grid-column: 3 / 5
+  
   &__message
     background-color: #fff
     height: 123px
