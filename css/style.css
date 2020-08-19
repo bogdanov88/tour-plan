@@ -394,6 +394,10 @@ img {
   max-width: 100%;
 }
 
+button {
+  outline: 0;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -615,6 +619,7 @@ img {
 
 .hotel-slider {
   width: 728px;
+  margin: 0;
 }
 
 .hotel-slider__item {
@@ -1408,9 +1413,8 @@ img {
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
-      grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  -ms-grid-columns: 1fr 1fr 1.25fr 0.74fr;
+      grid-template-columns: 1fr 1fr 1.25fr 0.74fr;
   grid-gap: 20px;
   grid-auto-rows: minmax(40px, -webkit-min-content);
   grid-auto-rows: minmax(40px, min-content);
@@ -1577,6 +1581,41 @@ img {
   color: #ffffff;
   padding: 18px 65px;
   cursor: pointer;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 95px 0 0;
+}
+
+.copyright__info {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.copyright__info_shift {
+  margin-left: 35%;
+}
+
+.copyright__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.copyright__pay-card {
+  width: 136px;
+  height: 22px;
 }
 
 @media (max-width: 1200px) {
@@ -1797,6 +1836,15 @@ img {
   .footer__legal {
     grid-column: span 2;
   }
+  .copyright {
+    padding: 56px 0 0;
+  }
+  .copyright__info_shift {
+    margin: 0;
+  }
+  .copyright__link:nth-child(1) {
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1821,6 +1869,9 @@ img {
     left: 0;
     right: 0;
     z-index: 99;
+  }
+  .navbar__search {
+    width: 90%;
   }
   .navbar__search_mobile_hidden {
     display: none;
@@ -1848,6 +1899,7 @@ img {
     display: flex;
   }
   .navbar-bottom {
+    width: 100%;
     display: none;
     position: fixed;
     top: 78px;
@@ -1855,6 +1907,7 @@ img {
     right: 0;
     bottom: 0;
     padding-top: 31px;
+    overflow-y: auto;
   }
   .navbar-bottom_visible {
     display: block;
@@ -1873,6 +1926,7 @@ img {
     display: block;
   }
   .menu-button {
+    outline: 0;
     border: none;
     width: 16px;
     height: 11px;
@@ -2131,6 +2185,11 @@ img {
     grid-column: 1;
     -ms-grid-row: 7;
     grid-row: 7;
+  }
+  .copyright {
+    padding: 30px 0 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=style.css.map */

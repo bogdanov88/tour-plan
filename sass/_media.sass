@@ -123,6 +123,15 @@
       grid-column: span 2
     &__legal
       grid-column: span 2
+  .copyright
+    padding: 56px 0 0
+    &__info
+      &_shift
+        margin: 0
+    &__link
+      &:nth-child(1)
+        margin: 0
+        
 
 @media (max-width: 768px)
   body
@@ -147,6 +156,7 @@
         right: 0
         z-index: 99
     &__search
+      width: 90%
       &_mobile
         &_hidden
           display: none
@@ -161,6 +171,7 @@
         &_visible
           display: flex
     &-bottom
+      width: 100% // это свойство - помогло убрать горизонтальную полосу прокрутки
       display: none
       position: fixed
       top: 78px
@@ -168,6 +179,7 @@
       right: 0
       bottom: 0
       padding-top: 31px
+      overflow-y: auto
       &_visible
         display: block
     &-menu
@@ -180,6 +192,7 @@
             display: block
   .menu
     &-button
+      outline: 0
       border: none
       width: 16px
       height: 11px
@@ -288,6 +301,7 @@
   .footer
     &__input
       flex-basis: 100%
+  
 
 @media (max-width: 576px)
   .navbar
@@ -350,3 +364,6 @@
     &__contact-form
       grid-column: 1
       grid-row: 7
+  .copyright
+    padding: 30px 0 0
+    flex-wrap: wrap

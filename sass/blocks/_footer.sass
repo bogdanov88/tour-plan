@@ -4,7 +4,8 @@
   padding: 108px 0 46px 0
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-template-columns: 1fr 1fr 1.25fr 0.74fr
+    // grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
@@ -103,3 +104,24 @@
     color: $text-light
     padding: 18px 65px
     cursor: pointer
+.copyright
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 95px 0 0
+  &__info
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &_shift
+      margin-left: 35%
+  &__link
+    display: inline-block
+    text-decoration: none
+    color: $text-light
+    margin-left: 10px
+  &__pay-card
+    width: 136px
+    height: 22px
+    
+
